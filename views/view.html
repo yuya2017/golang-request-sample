@@ -1,0 +1,13 @@
+
+<h1>Post App!</h1>
+
+<div>
+    {{ .PostCount }} total posts -
+    <a href="/post/new">Add Your Post</a>
+</div>
+
+<div>
+    {{range .Signatures}}
+        <p>{{.}}</p>
+    {{end}}
+</div>
